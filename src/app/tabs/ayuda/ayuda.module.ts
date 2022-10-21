@@ -1,12 +1,16 @@
+
 import { IonicModule } from '@ionic/angular';
 import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { ayudaPage } from './ayuda.page';
-import { ExploreContainerComponentModule } from '../../explore-container/explore-container.module';
 
 import { ayudaPageRoutingModule } from './ayuda-routing.module';
+import { HeaderTabComponent } from 'src/app/shared/header-tab/header-tab.component';
+import { ComponentesModule } from './../../shared/componentes.module';
+import { ExploreContainerComponentModule } from 'src/app/explore-container/explore-container.module';
+
 
 @NgModule({
   imports: [
@@ -16,6 +20,7 @@ import { ayudaPageRoutingModule } from './ayuda-routing.module';
     ExploreContainerComponentModule,
     RouterModule.forChild([{ path: '', component: ayudaPage }]),
     ayudaPageRoutingModule,
+    ComponentesModule
   ],
   declarations: [ayudaPage]
 })

@@ -1,11 +1,10 @@
 <app-header-tab titulo="tab5"></app-header-tab>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 5</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-list *ngFor="let item of valoresLista">
+    <ion-item [href]="item.url">
+      <ion-img [src]="item.imagen"></ion-img>
+    </ion-item>
+  </ion-list>
 
 </ion-content>
 

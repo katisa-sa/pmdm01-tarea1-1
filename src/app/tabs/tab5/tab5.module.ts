@@ -21,3 +21,4 @@ import { Tab5Page } from './tab5.page';
   declarations: [Tab5Page]
 })
 export class Tab5PageModule {}
+

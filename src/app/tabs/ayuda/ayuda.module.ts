@@ -9,7 +9,6 @@ import { ayudaPage } from './ayuda.page';
 import { ayudaPageRoutingModule } from './ayuda-routing.module';
 import { HeaderTabComponent } from 'src/app/shared/header-tab/header-tab.component';
 import { ComponentesModule } from './../../shared/componentes.module';
-import { ExploreContainerComponentModule } from 'src/app/explore-container/explore-container.module';
 
 
 @NgModule({
@@ -17,7 +16,6 @@ import { ExploreContainerComponentModule } from 'src/app/explore-container/explo
     IonicModule,
     CommonModule,
     FormsModule,
-    ExploreContainerComponentModule,
     RouterModule.forChild([{ path: '', component: ayudaPage }]),
     ayudaPageRoutingModule,
     ComponentesModule
